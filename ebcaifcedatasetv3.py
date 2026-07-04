@@ -401,7 +401,7 @@ if __name__ == "__main__":
         print(f"\n[12/12] AUC no conjunto de teste estrito (Sem Leakage): {auc_score:.4f}")
 
         # 10. Exportar Tudo!
-        save_model_artifacts(ebca_model, preprocessor, le, expected_features, subject_names, leakage_cols, filepath='modelo_evasao_v2.pkl')
+        save_model_artifacts(ebca_model, preprocessor, le, expected_features, subject_names, leakage_cols, filepath='modelo_evasao_v1.pkl')
 
     except FileNotFoundError:
         print("Arquivo de treino não encontrado, pule a execução para simular a predição se quiser.")
